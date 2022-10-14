@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
@@ -24,30 +29,53 @@
             </div>
             <div class="bottom">
                 <img src="manja-vitolic.jpg" alt="profile-pic">
-                <div id="user-name"><span>Hi There!</span><br>Zorg Of The Bog(@Zorg)</div>
+                <div id="user-name"><span>Hi There!</span><br>Zorg Of The Bog (@Zorg)</div>
                 <button type="button">New</button>
                 <button type="button">Upload</button>
                 <button type="button">Share</button>
             </div>
         </div>
         <div class="left-bar">
-            <p>Dashboard</p>
+           <div class="dash-header"><span class="material-symbols-outlined dash-icon">
+            dashboard
+            </span> <span>Dashboard</span></div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Tasks</a></li>
-                <li><a href="#">Communities</a></li>
+                <li><a href="#"><span class="material-symbols-outlined link-icon">
+                    home
+                    </span>
+                    <p>Home</p></a></li>
+                <li><a href="#"><a href="#"><span class="material-symbols-outlined link-icon">
+                    person
+                    </span>
+                    <p>Profile</p></a></li>
+                <li><a href="#"><a href="#"><span class="material-symbols-outlined link-icon">
+                    chat
+                    </span><p>Messages</p></a></li>
+                <li><a href="#"><span class="material-symbols-outlined link-icon">
+                    history
+                    </span><p>History</p></a></li>
+                <li><a href="#"><span class="material-symbols-outlined link-icon">
+                    task
+                    </span>Tasks</a></li>
+                <li><a href="#"><span class="material-symbols-outlined link-icon">
+                    groups
+                    </span>Communities</a></li>
             </ul>
             
             <ul>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Privacy</a></li>
+                <li><a href="#"><span class="material-symbols-outlined link-icon">
+                    settings
+                    </span>Settings</a></li>
+                <li><a href="#"><span class="material-symbols-outlined link-icon">
+                    help
+                    </span>Support</a></li>
+                <li><a href="#"><span class="material-symbols-outlined link-icon">
+                    lock
+                    </span>Privacy</a></li>
             </ul>
         </div>
         <div class="main-content">
+
             <div class="main">
                 <h2>Your Projects
                 </h2>
@@ -82,8 +110,7 @@
                         <span>Less Cool Project</span>
                         <p>
                             Quisque non metus nec est consectetur 
-                            venenatis eget eu mauris. Aliquam accumsan diam Nam quis venenatis magna. Donec vitae imperdiet mauris. Ut dictum tempor mauris, at 
-                            feugiat orci ultrices eu. Sed quis enim imperdiet urna fermentum interdum. 
+                            venenatis eget eu mauris. Sed quis enim imperdiet urna fermentum interdum. 
                            </p>
                         <div class="item-icons">
                             <a href="#">
@@ -214,8 +241,51 @@
 
                 </div>
             </div>
-            <div class="announcements"></div>
-            <div class="trends"></div>
+
+            <div class="announcements">
+                <h2>Announcements</h2>
+                <div class="side-top">
+                        <h3>Site Maintenance</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                            
+                        </p>
+                        <hr>
+                        <h3>Community Share Day</h3>
+                        <p>
+                            Donec maximus, tellus ut tristique interdum odio ante... 
+                           
+                        </p>
+                        <hr>
+                        <h3>Updated Privacy Policy</h3>
+                        <p>
+                            Donec maximus, tellus ut tristique interdum...
+                        </p>
+                    
+                </div>
+            </div>
+
+            <div class="trending">
+                <h2>Trending</h2>
+                <div class="trends">
+                    <div class="trend-item">
+                        <img src="alan-king-KZv7w34tluA-unsplash.jpg">
+                        <p><span>@tegan</span><br>
+                        World Peace Builder</p>
+                    </div>
+                    <div class="trend-item">
+                        <img src="manja-vitolic.jpg">
+                        <p><span>@morgan</span><br>
+                        Super Cool Project</p>
+                    </div>
+                    <div class="trend-item">
+                        <img src="stephen-leonardi-sMPRCsoUM4A-unsplash.jpg">
+                        <p><span>@kendal</span><br>
+                        Life Changing App</p>
+                    </div>
+                  
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -3,6 +3,7 @@ body{
 }
 
 *{
+    font-family: 'Roboto', sans-serif;
     margin:0;
     padding:0;
 }
@@ -10,7 +11,7 @@ body{
 
 .container{
     display:grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 300px 1fr;
     grid-template-rows: 170px 1fr;
 }
 
@@ -37,12 +38,12 @@ body{
    
 }
 .top > input{
-    width: 60%;
+    width: 100%;
     max-width: 400px;
     padding:8px;
     border: none;
     border-radius: 13px;
-    background-color: rgb(211, 209, 241);
+    background-color: rgb(226, 234, 243);
 }
 
 .top > span, #user-name{
@@ -83,11 +84,13 @@ body{
     font-size: 0.7em;
 }
 .bottom button{
-    width: 80px;
-    height: 30px;
+    width: 100px;
+    height: 40px;
     border-radius: 20px;
     border: none;
     background-color: rgb(31, 161, 181);
+    font-weight: 700;
+    font-size:16px;
 }
 
 
@@ -97,6 +100,14 @@ body{
 .material-symbols-outlined.md-30{
     font-size:30px;
 }
+
+.material-symbols-outlined.dash-icon{
+    font-size:50px;
+    color:white;
+    margin-right:5px;
+}
+
+
 
 .left-bar{
     text-align:left;
@@ -123,19 +134,22 @@ body{
 .left-bar > ul > li{
     margin-bottom:10px;
 }
-
+.left-bar > .dash-header{
+    display:flex;
+    align-items:center;
+}
 a{
     text-decoration: none;
     color:inherit;
 }
 
 .main-content{
-    background-color: rgb(173, 167, 167);
+    background-color: rgb(226, 234, 243);
     grid-column: 2/3;
     grid-row: 2/3;
     display:grid;
     grid-template-columns: 1fr 300px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows:  auto 1fr;
 }
 
 .main > h2{
@@ -158,18 +172,21 @@ a{
 }
 
 .item > span{
-    font-size:20px;
+    font-size:18px;
     font-weight: 600;
 }
 
 .item{
-    padding:15px;
-    font-size: 14px;
-    background-color: aliceblue;
+    padding:25px;
+    font-size: 15px;
+    background-color: white;
     position: relative;
     border-radius: 10px;
+    box-shadow: inset 8px 0px orange, 2px 2px 10px rgb(132, 129, 129) ;
 }
-
+.side-top, .trends{
+    box-shadow: 3px 3px 7px gray;
+}
 .item-icons{
     position:absolute;
     right:15px;
@@ -178,4 +195,79 @@ a{
 
 .icon{
     margin:0px 10px;
+}
+
+hr{
+    width: 100%;
+    background-color:rgb(181, 197, 215);
+    border-radius: 5px;
+    border: none;
+    height: 3px;
+    text-align:center;
+    margin: 20px 0px;
+}
+
+.announcements{
+    font-size:12px;
+   grid-row: 1/2;
+    
+}
+.announcements > .side-top{
+    padding:20px;
+    background: white;
+    margin-right:20px;
+    border-radius: 10px;
+}
+
+
+.announcements > h2, .trending > h2{
+    font-size:20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.side-top h3{
+ font-size:15px;
+}
+.trends{
+    background:white;
+    padding:1px 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.trend-item{
+    display:flex;
+    align-items: center;
+    margin:20px 0px;
+}
+
+.trend-item > img{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    border: none;
+    margin-right:20px;
+}
+
+.link-icon{
+    color:white;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+;
+margin-right:20px;
+}
+
+.left-bar a{
+    display:flex;
+    align-items: center;
+   
+    
+}
+.material-symbols-outlined.link-icon{
+    font-size:20px;
+    
 }
